@@ -24,7 +24,7 @@ app.get("/", (req, res) => {
 });
 
 // Creating a dynamic PORT
-const PORT = "https://diary-app-api.onrender.com" || 5000;
+const PORT = process.env.PORT || 5000;
 
 // Connect to Database then Listen and check if error
 mongoose
