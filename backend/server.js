@@ -10,7 +10,9 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(
-  cors({ origin: ["http://localhost:3000", "https://diary-app.onrender.com"] })
+  cors({
+    origin: ["http://localhost:3000", "https://diary-app-cv6f.onrender.com"],
+  })
 );
 app.use("/api/notes", notesRoute);
 app.use("/api/user", userRoute);
