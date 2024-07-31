@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://diary-app-cv6f.onrender.com"],
+    origin: ["http://localhost:3000", "https://diary-app-cv6f.onrender.com", "https://diary-appsample.netlify.app"],
   })
 );
 app.use("/api/notes", notesRoute);
